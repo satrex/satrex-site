@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="container">
+    <p class="muted">
+      © {{ now.Format "2006" }} {{ site.Title }}
+      {{ with site.Params.social }}
+        ·
+        {{ with .youtube }}<a href="{{ . }}" target="_blank" rel="noopener">YouTube</a>{{ end }}
+        {{ with .podcast }} · <a href="{{ . }}" target="_blank" rel="noopener">Podcast</a>{{ end }}
+        {{ with .twitter }} · <a href="{{ . }}" target="_blank" rel="noopener">X</a>{{ end }}
+      {{ end }}
+    </p>
+  </div>
+</footer>

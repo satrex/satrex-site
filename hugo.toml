@@ -1,0 +1,37 @@
+baseURL = "https://www.satrex.jp/"
+languageCode = "ja"
+title = "satrex"
+theme = "cardme"
+
+enableRobotsTXT = true
+
+[params]
+  tagline = "Bass · Technique · Record"
+  homeLede = "薄い名刺。だけど、世界へつながる入口。"
+
+  [params.social]
+    youtube = ""
+    podcast = ""
+    twitter = ""
+
+[menu]
+  [[menu.main]]
+    name = "奏法研究"
+    url = "/technique/"
+    weight = 10
+  [[menu.main]]
+    name = "ライブ"
+    url = "/live/"
+    weight = 20
+  [[menu.main]]
+    name = "メディア"
+    url = "/media/"
+    weight = 30
+  [[menu.main]]
+    name = "記録"
+    url = "/blog/"
+    weight = 40
+  [[menu.main]]
+    name = "スポンサー"
+    url = "/sponsor/"
+    weight = 50

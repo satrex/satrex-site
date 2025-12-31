@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <section class="hero card">
+    <h1 class="title">{{ site.Title }}</h1>
+    <p class="lede">{{ with site.Params.homeLede }}{{ . }}{{ end }}</p>
+
+    <div class="grid">
+      <a class="tile" href="/technique/">
+        <h2>奏法研究</h2>
+        <p>まだ名前のないベースソロスタイルの断片と整理。</p>
+      </a>
+      <a class="tile" href="/live/">
+        <h2>ライブ</h2>
+        <p>直近の出演情報と予約導線。</p>
+      </a>
+      <a class="tile" href="/media/">
+        <h2>メディア</h2>
+        <p>動画・ポッドキャスト・配信音源のリンク集。</p>
+      </a>
+      <a class="tile" href="/blog/">
+        <h2>記録</h2>
+        <p>短い日誌。続けられる粒度で。</p>
+      </a>
+      <a class="tile" href="/sponsor/">
+        <h2>スポンサー</h2>
+        <p>支援の形・対価・連絡先。</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 class="subtitle">最新の記録</h2>
+    <div class="list">
+      {{ range first 5 (where site.RegularPages "Section" "blog").ByDate.Reverse }}
+        <a class="list-item" href="{{ .RelPermalink }}">
+          <div class="list-item-title">{{ .Title }}</div>
+          <div class="list-item-meta">{{ .Date.Format "2006-01-02" }}</div>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

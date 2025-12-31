@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <article class="card">
+    <header class="card-header">
+      <h1 class="title">{{ .Title }}</h1>
+      {{ with .Params.lede }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ if .Date }}<p class="meta">{{ .Date.Format "2006-01-02" }}</p>{{ end }}
+    </header>
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}
