@@ -1,7 +1,7 @@
 baseURL = "https://www.satrex.jp/"
 languageCode = "ja"
 title = "satrex"
-theme = "cardme"
+theme = "nojs"
 
 enableRobotsTXT = true
 
@@ -35,3 +35,7 @@ enableRobotsTXT = true
     name = "スポンサー"
     url = "/sponsor/"
     weight = 50
+
+[markup]
+  [markup.highlight]
+    noClasses = false
