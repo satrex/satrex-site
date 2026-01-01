@@ -1,0 +1,58 @@
+# =========================
+# Hugo
+# =========================
+
+# ビルド成果物（GitHub Actionsで生成する前提）
+/public/
+/resources/_gen/
+
+# Hugoのローカルキャッシュ
+/.hugo_build.lock
+/hugo_stats.json
+
+# 一時ファイル
+/tmp/
+
+# =========================
+# OS / Editor
+# =========================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Node / Tooling（将来足しても安全）
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Secrets / Local overrides
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# ローカルでだけ使う設定差分
+config/_default/params.local.toml
+
+# =========================
+# Misc
+# =========================
+
+*.log
