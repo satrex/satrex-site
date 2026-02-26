@@ -1,4 +1,4 @@
-baseURL = "https://www.satrex.jp/"
+baseURL = "https://blog.satrex.jp/satrex-site/"
 languageCode = "ja"
 title = "satrex"
 theme = "nojs"
