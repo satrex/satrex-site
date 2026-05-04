@@ -1,7 +1,7 @@
 {{- $page := . -}}
 {{- with site.Menus.main }}
   <nav class="navbar">
-    <p>{{ site.Title }}</p>
+    <p><a href="{{ "/" | relURL }}">{{ site.Title }}</a></p>
     <label for="dropdown">
       <svg height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
         <title>Menu</title>
